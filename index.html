@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+<body>
+
+<a href="https://akrabmedia.com" class="back">← Back to Home</a>
+
+<div class="form-container">
+    <h2>Hi, Welcome Back!</h2>
+    <p class="description">Sign in to your dashboard and get things done!</p>
+
+    <form id="loginForm">
+        <label>Email</label>
+        <div class="input-wrapper">
+            <input type="email" id="email" placeholder="Your Email">
+            <span class="icon">📧</span>
+        </div>
+        <p class="error" id="emailError"></p>
+
+        <label>Password</label>
+        <div class="input-wrapper">
+            <input type="password" id="password" placeholder="Your Password">
+            <span class="icon eye" onclick="togglePassword()">👁️</span>
+        </div>
+        <p class="error" id="passwordError"></p>
+
+        <button type="button" onclick="validateForm()">LOGIN</button>
+    </form>
+
+    <div class="divider">or login using</div>
+
+    <button class="google-login">
+     <img src="mbahe.png" alt="">   Login using Google
+    </button>
+
+    <p class="signup-text">Didn’t have any account? <a href="#">Sign up for free</a></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
